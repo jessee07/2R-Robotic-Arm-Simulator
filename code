@@ -1,0 +1,46 @@
+#program in python to simulate the forward kinematics of a 2R Robotic Arm and to create a animation file of the plot.
+#importing module
+import math
+import matplotlib.pyplot as py
+
+#defining the set of values for angles
+n=10
+start=0
+end=math.pi/2
+
+#initial condition
+Xo=0
+Yo=0
+L1=1
+L2=0.5
+
+#empty arrays for angles
+theta1=[]
+theta2=[]
+
+#assigning counter variable
+ct=1
+
+for i in range(0,n):
+	tmp=start+i*(end-start)/(n-1)
+	theta1.append(tmp)
+	theta2.append(tmp)
+
+for t1 in theta1:
+	for t2 in theta2:
+		X1=Xo+L1*math.cos(t1)
+		Y1=Yo+L1*math.sin(t1)
+		X2=X1+L2*math.cos(t2)
+		Y2=Y1+L2*math.sin(t2)
+
+		filename=str(ct)+".png"
+		ct=ct+1
+
+		py.figure()
+		py.title('Forward Kinematics Of 2R Robotic Arm') 
+		py.plot([Xo,X1],[Yo,Y1])
+		py.plot([X1,X2],[Y1,Y2])
+		py.xlim([0,2])
+		py.ylim([0,2])
+		py.grid()
+		py.savefig(filename)
