@@ -7,7 +7,7 @@ PROBLEM STATEMENT:
 
 To find the end-tip position of a manipulator in a coordinate space given its joint parameters (i.e., joint angles for revolute joints and link offset for prismatic joints).This means that given a certain pose of a robotic arm, the xy coordinates of the hand must be determined.
 
-**THEORY:
+**THEORY:**
 
 Forward kinematics refers to the use of the kinematic equations of a robot to compute the position of the end-effector from specified values for the joint parameters.
 
@@ -40,9 +40,9 @@ Drived Formulae,
 **Step 7 :** I have installed cygwin and imagemagick inorder to animation the obtained pictures as a gif
 
 
-**OUTPUT:
+**OUTPUT:**
 ![1](https://user-images.githubusercontent.com/104487026/179734790-170b4e39-4a72-457a-bbdf-bcfd87913844.gif)
 
-**RESULT:
+**RESULT:**
 
 We have create a program in python to simulate the forward kinematics of a 2R Robotic Arm and created a animation gif file of the plot.
