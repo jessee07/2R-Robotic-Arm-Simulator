@@ -40,8 +40,8 @@ Drived Formulae,
 **Step 7 :** I have installed cygwin and imagemagick inorder to animation the obtained pictures as a gif
 
 
-**OUTPUT:**
-![1](https://user-images.githubusercontent.com/104487026/179734790-170b4e39-4a72-457a-bbdf-bcfd87913844.gif)
+**OUTPUT:**<br /> 
+![1](https://user-images.githubusercontent.com/104487026/179734790-170b4e39-4a72-457a-bbdf-bcfd87913844.gif)<br /> 
 
 **RESULT:**
 
